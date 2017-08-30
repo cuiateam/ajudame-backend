@@ -1,0 +1,30 @@
+{
+  "name": "ajudame-backend",
+  "version": "1.0.0",
+  "description": "Backend do sistema de ajuda.",
+  "main": "src/loader.js",
+  "scripts": {
+    "dev": "nodemon",
+    "production": "pm2 start src/loader.js --name ajudame-backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuiateam/ajudame-backend.git"
+  },
+  "author": "CuiaTeam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cuiateam/ajudame-backend/issues"
+  },
+  "homepage": "https://github.com/cuiateam/ajudame-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.0",
+    "node-restful": "^0.2.5",
+    "pm2": "^2.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
