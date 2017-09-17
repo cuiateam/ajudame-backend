@@ -15,3 +15,21 @@ Após baixar todas as dependencias já será possível colocar para rodar o serv
 ```
 nodemon
 ```
+Ou também é possivel rodar com o seguinte comando:
+```
+npm run dev
+```
+Ou
+```
+npm run production
+```
+
+# Banco de dados MongoDB
+
+Agora com a adição do banco de dados MongoDB é necessário realizar a instalação e garantir que ele esteja em execução antes de iniciar o servidor, para instalar ele basta seguir um a documentação oficial: https://docs.mongodb.com/getting-started/shell/installation/
+
+No meu caso a instação foi em um linux e para rodar ele basta eu digitar o seguinte comando no console que ele já entra em execução:
+
+```
+mongod
+```
