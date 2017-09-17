@@ -6,7 +6,7 @@ const TipoOng = require('../tipo-ong/tipoOng')
 
 const ongSchema = new mongoose.Schema({
 	nome: { type: String, required: true },
-  tipoOng: TipoArquivo.schema,
+  tipoOng: TipoOng.schema,
   descricao: { type: String },
   trabalhos: { type: String },
   favorecidos: { type: String },
