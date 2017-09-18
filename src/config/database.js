@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise // Apenas para retirar um warning referente ao Promise do mongo
 
-module.exports = mongoose.connect('mongodb://localhost/ajuda-me')
+module.exports = mongoose.connect('mongodb://localhost/ajuda-me', {useMongoClient: true})
 
 // Deixando em portugues algumas mensagens basicas do mongo
 mongoose.Error.messages.general.required = "O atributo '{PATH}' é obrigatório."
