@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<title>Test API Ajuda-me</title>
+
+	<!-- CSS Files -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <!-- Carrega o VueJS -->
+	<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+</head>
+<body class="container">
+  <br />
+  <div id="testTipoOng" class="card">
+    <div class="card-header">
+      Tipo de ONG
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="tipoOngId">Código</label>
+          <input type="text" class="form-control" id="tipoOngId" placeholder="Código será gerado automaticamente" disabled>
+        </div>
+        <div class="form-group">
+          <label for="tipoOngNome">Nome do Tipo da ONG</label>
+          <input type="text" class="form-control" id="tipoOngNome" aria-describedby="tipoOngHelp" placeholder="Digite o nome do Tipo da ONG">
+          <small id="tipoOngHelp" class="form-text text-muted">Tipo de ONG será utilizado como categorização das ONGs cadastradas</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
+    </div>
+    <hr />
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Nome do Tipo da ONG</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="tipoOng in tiposOng">
+          <th scope="row">{{ tipoOng._id }}</th>
+          <td>{{ tipoOng.nome }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br />
+  <div id="testTipoArquivo" class="card">
+    <div class="card-header">
+      Tipo de Arquivo
+    </div>
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="tipoArquivoId">Código</label>
+          <input type="text" class="form-control" id="tipoArquivoId" placeholder="Código será gerado automaticamente" disabled>
+        </div>
+        <div class="form-group">
+          <label for="tipoArquivoNome">Nome do Tipo de Arquivo</label>
+          <input type="text" class="form-control" id="tipoArquivoNome" aria-describedby="tipoArquivoHelp" placeholder="Digite o nome do Tipo de Arquivo">
+          <small id="tipoArquivoHelp" class="form-text text-muted">Tipo de Arquivo será utilizado como categorização dos Arquivos cadastradas</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
+    </div>
+    <hr />
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Nome do Tipo de Arquivo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="tipoArquivo in tiposArquivo">
+          <th scope="row">{{ tipoArquivo._id }}</th>
+          <td>{{ tipoArquivo.nome }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="test.js"></script>
+</body>
