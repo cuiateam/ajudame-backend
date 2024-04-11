@@ -19,7 +19,7 @@
   "homepage": "https://github.com/cuiateam/ajudame-backend#readme",
   "dependencies": {
     "body-parser": "1.15.2",
-    "express": "4.14.0",
+    "express": "4.19.2",
     "mongoose": ">= 5.7.5",
     "node-restful": "0.2.5",
     "pm2": "2.1.5"
