@@ -22,7 +22,7 @@
     "express": "4.20.0",
     "mongoose": ">= 5.7.5",
     "node-restful": "0.2.5",
-    "pm2": "2.1.5"
+    "pm2": "7.0.0"
   },
   "devDependencies": {
     "nodemon": "1.11.0"
