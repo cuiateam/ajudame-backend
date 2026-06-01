@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/cuiateam/ajudame-backend#readme",
   "dependencies": {
-    "body-parser": "1.20.3",
-    "express": "4.19.2",
+    "body-parser": "1.15.2",
+    "express": "4.20.0",
     "mongoose": ">= 5.7.5",
     "node-restful": "0.2.5",
-    "pm2": "2.1.5"
+    "pm2": "7.0.0"
   },
   "devDependencies": {
     "nodemon": "1.11.0"
